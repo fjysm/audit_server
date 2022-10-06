@@ -16,11 +16,11 @@ public class OrgSet extends BaseEntity {
 
     @ApiModelProperty(value = "机构名称")
     @TableField("orgname")
-    private String hosname;
+    private String orgname;
 
     @ApiModelProperty(value = "机构编号")
     @TableField("orgcode")
-    private String hoscode;
+    private String orgcode;
 
     @ApiModelProperty(value = "api基础路径")
     @TableField("api_url")

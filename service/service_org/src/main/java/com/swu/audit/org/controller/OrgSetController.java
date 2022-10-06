@@ -19,6 +19,7 @@ import java.util.Random;
 @Api(tags = "审计机构设置管理")
 @RestController
 @RequestMapping("/admin/org/orgSet")
+@CrossOrigin(allowCredentials="true")
 public class OrgSetController {
 
     //注入service
@@ -36,7 +37,7 @@ public class OrgSetController {
 
     //2.删除组织
     @ApiOperation("删除审计机构")
-    @DeleteMapping("{id")
+    @DeleteMapping("{id}")
     public Result removeOrgSet(@PathVariable Long id){
         boolean flag = orgSetService.removeById(id);
        if(flag){
