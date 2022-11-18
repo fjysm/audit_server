@@ -68,7 +68,7 @@ public class OrgSetController {
 
     }
 
-    //4.添加医院设置
+    //4.添加机构设置
     @ApiOperation("添加机构")
     @PostMapping("saveOrgSet")
     public Result saveHospitalSet(@RequestBody OrgSet orgSet){
